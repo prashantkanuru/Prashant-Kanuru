@@ -77,7 +77,7 @@ def convert_fahrenheit_to_celsius(fahr):
 ## A.4 Prompting Templates for Data Generation:
 - SLEF-INSTRUCT relies on a number of prompting templates in order to elicit the generation from language models. Here we provide our four templates:
   -  for generating the instruction (Table 5)
-    - Prompt used for generating new instructions - 
+     - Prompt used for generating new instructions
   -  classifying whether an instruction represents a classification task or not (Table 6)
   -  generating non-classification instances with the input-first approach (Table 7)
   -  generating classification instances with the output first approach. (Table 8)
