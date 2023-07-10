@@ -10,3 +10,17 @@ Applying our method to the vanilla GPT3, we demonstrate a 33% absolute improveme
 ## How self-instruct works:
 1. The self-instruct method is an iterative bootstrapping algorithm that starts with a
 - seed set of manually-written instructions and uses them to prompt the language model to generate new instructions and corresponding input-ouput instances.
+  -  So prompt the language model to generate new instructions based on seed set of manually written instructions and
+  -  also in the prompt intsruct to generate corresponding input-output instances.
+2. These generations are then filtered to remove low-quality or similar ones, and the resulting data is added back to the task pool. THis process can be repeated multiple times, resulting in a large collection of instructional data that can be used to fine-tune the language model to follow instructions more effectively.
+
+### Examples:
+<br>
+Instruction: Given an address and city, come up with the zip code.
+<br>
+Input:
+<br>
+Address: 123 Main Street, City: San Francisco
+<br>
+Output: 94105
+
