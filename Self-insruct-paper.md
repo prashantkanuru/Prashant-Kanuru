@@ -52,8 +52,8 @@ Output:
 <br>
 def convert_fahrenheit_to_celsius(fahr):
   <br>
-  \tcelsius=(fahr-32)*5/9
+nbspnbspnbspnbspcelsius=(fahr-32)*5/9
   <br>
-  \treturn celsius
+nbspnbspnbspnbspreturn celsius
   <br>
 ```  
