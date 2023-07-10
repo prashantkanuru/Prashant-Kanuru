@@ -48,7 +48,6 @@ Input: NULL
 <br>
 Output: 
 <br>
-```
 <br>
 def convert_fahrenheit_to_celsius(fahr):
   <br>
@@ -56,4 +55,4 @@ def convert_fahrenheit_to_celsius(fahr):
   <br>
 &nbsp;&nbsp;&nbsp;&nbsp;return celsius
   <br>
-```  
+ 
