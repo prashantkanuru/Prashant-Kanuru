@@ -9,4 +9,4 @@ Our pipeline generates instructions, input and output samples from a language mo
 Applying our method to the vanilla GPT3, we demonstrate a 33% absolute improvement over the original model on SUPER-NATURALINSTRUCTIONS, on par with the performance of InstructGPT001, (unless otherwise specified, our comparisons are with the text-davinci-001 engine. We focus on this engine since it is the closest to our experimental setup: supervised finetuning with human demonstrations. The newer engines are more powerful, though they use more data (e.g., code completion or latest user queries) or algorithms (e.g. PPO) that are difficult to compare with.
 ## How self-instruct works:
 1. The self-instruct method is an iterative bootstrapping algorithm that starts with a
-  1a. seed set of manually-written instructions and uses them to prompt the language model to generate new instructions and corresponding input-ouput instances.
+  1a- seed set of manually-written instructions and uses them to prompt the language model to generate new instructions and corresponding input-ouput instances.
