@@ -23,4 +23,33 @@ Input:
 Address: 123 Main Street, City: San Francisco
 <br>
 Output: 94105
-
+<br>
+Instruction: I am looking for a job and I need to fill out an application form. Can you please help me complete it?
+<br>
+Input:
+<br>
+Application Form:
+<br>
+Name:_____________ Age: ____________ Sex:____________
+<br>
+Phone Number:_____________ Email Address:_____________
+<br>
+Education:__________
+<br>
+Output:
+<br>
+Name: John Doe Age: 25 Sex: Male
+<br>
+Phone Number .....
+<br>
+Instruction: How to write a code for converting degree fahrenheit to celcisus.
+<br>
+Input: NULL
+<br>
+Output: 
+<br>
+```
+def convert_fahrenheit_to_celsius(fahr):
+  celsius=(fahr-32)*5/9
+  return celsius
+```  
