@@ -55,4 +55,32 @@ def convert_fahrenheit_to_celsius(fahr):
   <br>
 &nbsp;&nbsp;&nbsp;&nbsp;return celsius
   <br>
+ <br>
+ Instruction: Write a letter from the perspective of a cat.
+ <br>
+ Input: Null
+ <br>
+ Output: 
+ <br>
+ Dear [Owner], I am writing to you today because I have a problem. You see, I have been living with you for the past [Number of Years] and I love 
+- The above examples are selected tasks from the generated instruction using vanilla GPT3. Some texts are reformatted for presentation
+(nbsp for 1 space, ensp for 2 spaces, emsp for 4 spaces)
+
+### Self-Instructed Models:
+- SELF-INSTRUCT is a semi-automated process for instruction-tuning a pretrained LM using instruction signals from the model itself. THe overall process is an iterative bootstrapping algorithm. 
+  - It starts off with a limited (e.g. 175 in our study) seed set of manually written tasks that are used to guide the overall generation.
+- In the first phase, the model is prompted to generate instructions for new tasks. This step leverages the existing collection of instructions to create more broad-coverage instructions that define (often new) tasks.
+- Given the new newly-generated set of instructions, the framework also creates input-output instances for them, which can be later used for supervising the instruction tuning.
+- FInally, various heuristics are used to automatically filter low-qualiyty or repeated instructions, before adding the remaining valid tasks to the task pool. This process can be repeated for many iterations until reaching a large number of tasks.
+- To evaluate SELF-INSTRUCT empirically, we run this framework on GPT3 which is a vanilla LM. **The iterative SELF INSTRUCT process on this model leads to about 52k instructions, paired with about 82k instance inputs and target outputs**
+
+## A.4 Prompting Templates for Data Generation:
+- SLEF-INSTRUCT relies on a number of prompting templates in order to elicit the generation from language models. Here we provide our four templates:
+  -  for generating the instruction (Table 5)
+    - Prompt used for generating new instructions - 
+  -  classifying whether an instruction represents a classification task or not (Table 6)
+  -  generating non-classification instances with the input-first approach (Table 7)
+  -  generating classification instances with the output first approach. (Table 8)
+ 
+
  
